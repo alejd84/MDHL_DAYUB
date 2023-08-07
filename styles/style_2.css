@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 10px 20px 20px 20px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    background: rgb(177, 177, 177);
+}
+
+.eventos_dia{
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;    
+}
+
+.eventos_dia p{
+    font-weight: normal;
+    padding-bottom: 3px;
+    font-style: normal;
+}
+
+#banner h2{
+    margin-top: 0;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px #ffaf1a;     
+}
+
+#banner img {
+    display: block;
+    object-fit: cover;
+    background-position: center;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    border: 3px solid #ffaf1a;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    margin-left: 40px;
+    margin-right: 40px;
+    position: absolute;
+    top: 70px;
+    left: 1200px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(95, 161, 153);
+}
+
+a {
+    color: rgb(95, 161, 153);
+}
+
+a:visited {
+    color: rgb(57, 95, 91);
+}
+
+a:hover {
+    color: #ffaf1a;
+}
+
+a:active {
+    color: #ff9c1c;
+}
+
+.botonera {
+    display: inline;
+    border: 2px solid black;
+    background-color: rgb(95, 161, 153);
+    text-align: center;
+    margin: 9px;
+    padding: 2px;
+    box-shadow: 3px 3px 1px 1px rgb(0, 0, 0, 0.5);
+}
+
+.botonera_activa {
+    display: inline;
+    border: 2px solid black;
+    background-color: rgb(248, 225, 46);
+    text-align: center;
+    margin: 9px;
+    padding: 2px;
+    box-shadow: 3px 3px 1px 1px rgb(0, 0, 0, 0.5);    
+}
+
+.botonera a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.eventos {
+    display: inline-block;
+    margin-left: 60px;
+    font-size: 18px;
+}
+
+.inicio>h1{
+    display: inline;
+    font-size: 60px;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #ffaf1a;
+}
+
+.inicio img{
+    border: 1px solid #ffaf1a;
+    background-color: rgb(177, 177, 177);
+    border-radius: 5px;    
+    position: absolute;
+    bottom: 350px;
+    left: 40px;
+}
+
+main {
+    margin-left: 10%;
+}
+
+div.textocontact{
+    font-size: 18px; 
+}
+
+div.aboutus{
+    font-size: 18px; 
+}
+
+.email_link {
+    text-decoration: none;
+    display: inline;
+    font-size: 18px;   
+}
+
+.margen20 {
+    margin-bottom: 20px;
+}
+
+.consangria {
+    text-indent: 30px;
+}
+
+.italica {
+    font-style: italic;
+}
+
+footer{
+    color: rgb(61, 61, 61);
+    margin-top: 200px;
+    text-align: center;
+    font-size: 10px;
+    position: relative;   
+}
