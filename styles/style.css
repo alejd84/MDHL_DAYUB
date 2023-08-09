@@ -24,12 +24,13 @@
 
 body{
     margin: 0;
-    background-color: rgb(184, 143, 50); 
+    /* background-color: rgb(109, 97, 68);  */
+    /* background-color: rgb(184, 143, 50);  */
+    background-color: #3b3b3b; 
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Oxanium', sans-serif;
 }
 
 .inicio{
@@ -51,26 +52,31 @@ header img{
 }
 
 #logo:hover {
-    /* Animation */
-    transition: transform .2s;
+    transition: all 0.5s ease-in-out; /* Animation */
     filter: drop-shadow(2px 4px 8px rgb(255, 175, 26));
-    -ms-transform: scale(1.1);
-    /* IE 9 */
-    -webkit-transform: scale(1.1);
-    /* Safari 3-8 */
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);  
 }
+
 
 h1{
     min-width: 55%;
     align-self: flex-start;
     font-family: "advanced_led_board";
     font-size: 60px;
-    color: #ffaf1a;
+    color: rgb(255, 217, 0);
+    /* color: #ffaf1a; */
     padding: 1rem;
     text-shadow: -1px 1px 1px black, -2px 2px 2px rgb(195, 76, 52), 0 0 10px rgb(233, 100, 73);
     text-transform: uppercase;
     font-weight: 400; 
+}
+
+#logotitle:hover {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    cursor: default;
 }
 
 h2{
@@ -107,12 +113,11 @@ a:active {
 
 .botonera{
     width: 100%;
-    background: black;
     margin: 0;
     padding: 0;
     font-size: 1.3rem;
     text-align: center;
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.443);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.443);
     background-color: rgb(45, 45, 45);
     cursor: pointer;
 }
@@ -139,6 +144,7 @@ a:active {
     color: rgb(248, 225, 46);
     border: 3px solid rgb(91, 163, 155);
     background-color: rgb(0, 0, 0);
+    font-size: 1.3rem;
 }
 
 
@@ -245,6 +251,11 @@ tr, td{
     padding: 2px;
 }
 
+tr:hover td:not([rowspan], [colspan]) {
+    background-color:rgb(255, 237, 137);
+    ;
+}
+
 caption{
     font-weight: bold;
     margin: 20px;
@@ -294,15 +305,19 @@ tfoot{
 }
 
 footer{
-    padding: 1em 0;
-    text-align: center;
     margin-top: auto;
-    background-color: rgb(45, 45, 45);
+    width: 100%;
+    padding: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0px -3px 1px rgba(0, 0, 0, 0.443);
+    background-color: rgb(45, 45, 45); 
 }
 
 footer p{
     font-family: 'scoreboard';
-    color: #ffaf1a;
+    color: rgb(255, 217, 0);
+    /* color: #ffaf1a; */
     text-align: center;
 }
 
@@ -317,12 +332,22 @@ footer p{
 }
 
 .blinking {
-    animation: scoreboard 0.5s infinite alternate;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
 
-@keyframes scoreboard {
-    from {opacity:0;}
-    to {opacity: 1;}
+@keyframes blink-animation {
+    to 
+    {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to 
+    {
+        visibility: hidden;
+    }
 }
 
 div.divspaced{
