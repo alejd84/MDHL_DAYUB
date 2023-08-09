@@ -1,15 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
 
 @font-face {
-    font-family: "Scoreboard";
+    font-family: "scoreboard";
     src: url("../fonts/scoreboard.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "advanced_led_board";
+    src: url("../fonts/advanced_led_board.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "enhanced_led_board";
+    src: url("../fonts/enhanced_led_board.ttf") format("truetype");
 }
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing:border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oxanium', sans-serif;
 }
 
 body{
@@ -19,7 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oxanium', sans-serif;
 }
 
 .inicio{
@@ -54,7 +64,7 @@ header img{
 h1{
     min-width: 55%;
     align-self: flex-start;
-    font-family: "Scoreboard";
+    font-family: "advanced_led_board";
     font-size: 60px;
     color: #ffaf1a;
     padding: 1rem;
@@ -64,7 +74,7 @@ h1{
 }
 
 h2{
-    font-family: "Scoreboard";
+    font-family: "scoreboard";
     text-align: center;
     margin-top: 1rem;
     text-shadow: 1px 1px 1px #000000;
@@ -100,7 +110,6 @@ a:active {
     background: black;
     margin: 0;
     padding: 0;
-    font-family: "Scoreboard";
     font-size: 1.3rem;
     text-align: center;
     box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.443);
@@ -115,7 +124,7 @@ a:active {
     box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.443);
     color: rgb(211, 211, 211);
     text-align: center;
-    font-family: "Scoreboard";
+    font-family: "scoreboard";
     font-size: 1.3rem;
     background-color: rgb(45, 45, 45);
     cursor: pointer;
@@ -160,19 +169,19 @@ a:active {
 }
 
 .text{
-    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.7), rgba(197, 157, 111, 0.7)),url(../img/design1_image2.jpg);
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.9), rgba(197, 157, 111, 0.9)),url(../img/design1_image2.jpg);
 }
 
 .calendar{
-    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.7), rgba(197, 157, 111, 0.7)),url(../img/hockey_2.jpg);
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.9), rgba(197, 157, 111, 0.9)),url(../img/hockey_2.jpg);
 }
 
 .aboutus{
-    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.7), rgba(197, 157, 111, 0.7)),url(../img/hockey_3.jpg);
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.9), rgba(197, 157, 111, 0.9)),url(../img/hockey_3.jpg);
 }
 
 .contact{  
-    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.7), rgba(197, 157, 111, 0.7)),url(../img/hockey_1.jpg);
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.9), rgba(197, 157, 111, 0.9)),url(../img/hockey_1.jpg);
 }
 
 p.pleft{
@@ -212,7 +221,7 @@ table{
 }
 
 th{
-    font-family: "Scoreboard";
+    font-family: "scoreboard";
     font-weight: bold;
     text-align: center;  
     margin: auto;
@@ -223,7 +232,7 @@ th{
 
 tr, td{
     border: 1px solid rgb(195, 76, 52);
-    font-family: "Scoreboard";
+    font-family: "scoreboard";
     font-weight: bold;
     text-align: center;  
     margin: auto;
@@ -285,12 +294,16 @@ tfoot{
 }
 
 footer{
-    font-family: 'Oswald', sans-serif;
-    color: #ffaf1a;
     padding: 1em 0;
     text-align: center;
     margin-top: auto;
     background-color: rgb(45, 45, 45);
+}
+
+footer p{
+    font-family: 'scoreboard';
+    color: #ffaf1a;
+    text-align: center;
 }
 
 .italicunderline {
