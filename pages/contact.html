@@ -28,7 +28,8 @@
                 <a href="../index.html">Home</a>
                 <a href="./game-info.html">Games Info</a>
                 <a href="./about-mdhl.html">About MDHL</a>
-                <a href="./rules.html">Rules</a>               
+                <a href="./rules.html">Rules</a>              
+                <a href="./registration.html">Registration</a>                      
                 <a id="boton_activo" href="#">Contact</a>
             </nav>
         </div>
@@ -36,12 +37,27 @@
     <main>
         <h2 class="blinking">CONTACT US</h2>
         <section class="text contact">
-            <h3>BY E-MAIL</h3>
+            <h3>Contact us or send a Ticket</h3>
             <p>Please email us at <a href="mailto:mdhl@chihockey.org" class="email_link">mdhl@chihockey.org</a></p>
             <p>We reply to your email as soon as we can.</p>
+            <br>
+            <br>
+            <form action="./show-data.html" method="get">
+                <fieldset class="smallform">
+                    <label for="name">Contact Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required><br>
+                    <label for="description">Description</label>
+                    <textarea name="description" placeholder="Tell us about you" style="width:250px;height:150px;"></textarea>                 
+                    <button class="email" type="reset">Reset</button>
+                    <button class="email" type="submit"><span>Submit </span></button>  
+                </fieldset>                              
+            </form>
         </section>
     </main>
     <footer>
+        <p>Developed by <a href="https://github.com/alejd84" target="_blank">@ALEJD84</a></p>
         <p>MDHL © 2023</p>
     </footer>
 </body>
