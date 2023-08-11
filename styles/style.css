@@ -10,16 +10,16 @@
     src: url("../fonts/advanced_led_board.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "enhanced_led_board";
-    src: url("../fonts/enhanced_led_board.ttf") format("truetype");
-}
-
 *{
     margin: 0px;
     padding: 0px;
     box-sizing:border-box;
     font-family: 'Oxanium', sans-serif;
+    font-size: 100%;
+}
+
+img{
+    max-width: 100%;
 }
 
 body{
@@ -35,8 +35,8 @@ body{
     background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.7), rgba(112, 109, 109, 0.7));
     background-position: center center;
     background-size: cover;    
-    height: 200px;
-    padding: 10px 30px;
+    height: 12.5rem;
+    padding: 0.625rem 1.875rem;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -47,13 +47,13 @@ body{
 
 header img{
     margin-top: 10%;
-    filter: drop-shadow(0 2px 5px rgb(0, 0, 0));
-    height: 110%;
+    filter: drop-shadow(0 0.125rem 0.312rem rgb(0, 0, 0));
+    height: 100%;
 }
 
 #logo:hover {
     transition: all 0.5s ease-in-out; /* Animation */
-    filter: drop-shadow(2px 4px 8px rgb(255, 175, 26));
+    filter: drop-shadow(0.125rem 0.25rem 0.5rem rgb(255, 175, 26));
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);  
@@ -64,10 +64,10 @@ h1{
     min-width: 55%;
     align-self: flex-start;
     font-family: "advanced_led_board";
-    font-size: 60px;
+    font-size: 3rem;
     color: rgb(255, 217, 0);
     padding: 1rem;
-    text-shadow: -1px 1px 1px black, -2px 2px 2px rgb(195, 76, 52), 0 0 10px rgb(233, 100, 73);
+    text-shadow: -0.0625rem 0.0625rem 0.0625rem black, -0.125rem 0.125rem 0.125rem rgb(195, 76, 52), 0 0 0.625rem rgb(233, 100, 73);
     text-transform: uppercase;
     font-weight: 400; 
 }
@@ -82,8 +82,8 @@ h2{
     font-family: "scoreboard";
     text-align: center;
     margin-top: 1rem;
-    text-shadow: 1px 1px 1px #000000;
-    padding: 5px;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000000;
+    padding: 0.3125rem;
     font-weight: bold;
     color: rgb(255, 217, 0);
 }
@@ -116,16 +116,16 @@ a:active {
     padding: 0;
     font-size: 1.3rem;
     text-align: center;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.443);
+    box-shadow: 0px 0.1875rem 0.0625rem rgba(0, 0, 0, 0.443);
     background-color: rgb(45, 45, 45);
     cursor: pointer;
 }
 
 .botonera a{
-    padding: 2px 12px;
-    margin: 3px 5px;
-    border: 2px solid rgb(195, 76, 52);
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.443);
+    padding: 0.125rem 0.75rem;
+    margin: 0.1875rem 0.3125rem;
+    border: 0.125rem solid rgb(195, 76, 52);
+    box-shadow: 0.1875rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.443);
     color: rgb(211, 211, 211);
     text-align: center;
     font-family: "scoreboard";
@@ -137,13 +137,18 @@ a:active {
 .botonera a:hover{
     background-color: rgb(255, 217, 0);
     color: black;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out; /* Animation */
+    filter: drop-shadow(0.125rem 0.25rem 0.5rem rgb(255, 175, 26));    
 }
 
 .botonera a[href="#"] {
     color: rgb(255, 217, 0);
-    border: 3px solid rgb(91, 163, 155);
-    background-color: rgb(0, 0, 0);
+    border: 0.1875rem solid rgb(91, 163, 155);
+    background-color: rgb(45, 45, 45);
     font-size: 1.3rem;
+    transition: all 0.5s ease-in-out; /* Animation */
+    filter: drop-shadow(0.125rem 0.25rem 0.5rem rgb(91, 163, 155));    
 }
 
 
@@ -152,13 +157,13 @@ a:active {
     text-justify: inter-word;
     color: black;
     width: 100%;
-    padding: 40px;
+    padding: 2.5rem;
     background-position: center center;
     background-size: cover;
     margin-top: 1%;
     margin-bottom: 1%;
-    border-top: 3px solid rgb(195, 76, 52);
-    border-bottom: 3px solid rgb(195, 76, 52);
+    border-top: 0.1875rem solid rgb(195, 76, 52);
+    border-bottom: 0.1875rem solid rgb(195, 76, 52);
     min-height: 60vh;
 }
 
@@ -166,7 +171,7 @@ a:active {
     text-align: center;
     margin-top: 0;
     padding: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 .text h3, p{
@@ -193,7 +198,7 @@ p.pleft{
     text-align: left;
     text-align: justify;
     text-justify: inter-word;
-    text-indent: 40px;
+    text-indent: 2.5rem;
 }
 
 .fields dt{
@@ -236,28 +241,23 @@ th{
 }
 
 tr, td{
-    border: 1px solid rgb(195, 76, 52);
+    border: 0.0625rem solid rgb(195, 76, 52);
     font-family: "scoreboard";
     font-weight: bold;
     text-align: center;  
     margin: auto;
     font-size: small;
-    border-left: 1px;
-    border-right: 1px;
-    border-top: 1px;
+    border-left: 0.0625rem solid rgb(195, 76, 52);
+    border-right: 0.0625rem solid rgb(195, 76, 52);
+    border-top: 0.0625rem solid rgb(195, 76, 52);
     border-bottom: 0;
     border-collapse: collapse;
-    padding: 2px;
+    padding: 0.125rem;
 }
 
 tr:hover td:not([rowspan], [colspan]) {
     background-color:rgb(255, 237, 137);
     ;
-}
-
-caption{
-    font-weight: bold;
-    margin: 20px;
 }
 
 thead{
@@ -270,6 +270,11 @@ tfoot{
     font-weight: bold;
     text-align: center;
     font-size: medium;
+}
+
+caption{
+    font-weight: bold;
+    margin: 1.1rem;
 }
 
 .moreinfo{
@@ -301,9 +306,9 @@ footer{
     margin-top: auto;
     width: 100%;
     padding: 0;
-    font-size: 15px;
+    font-size: 0.9375rem;
     text-align: center;
-    box-shadow: 0px -3px 1px rgba(0, 0, 0, 0.443);
+    box-shadow: 0px -0.1875rem 0.0625rem rgba(0, 0, 0, 0.443);
     background-color: rgb(45, 45, 45); 
 }
 
@@ -377,32 +382,32 @@ footer a{
 }
 
 div.divspaced{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 div.regulations{
-    margin-top: 50px;
-    margin-bottom: 20px; 
+    margin-top: 3.125rem;
+    margin-bottom: 1.25rem; 
     text-decoration: underline;
     text-decoration-color:rgb(195, 76, 52);
 }
 
 div.sportmanship{
-    margin-top: 50px;
-    margin-bottom: 20px; 
+    margin-top: 3.125rem;
+    margin-bottom: 1.25rem; 
     text-decoration: underline;
     text-decoration-color:rgb(195, 76, 52);
 }
 
 div.allplay{
-    margin-top: 50px;
-    margin-bottom: 20px; 
+    margin-top: 3.125rem;
+    margin-bottom: 1.25rem; 
     text-decoration: underline;
     text-decoration-color:rgb(195, 76, 52);
 }
 
 .indented {
-    text-indent: 30px;
+    text-indent: 1.875rem;
 }
 
 .email_link {
@@ -437,46 +442,50 @@ form {
 }
 
 fieldset {
-    margin: 10px 10px;
-    padding: 10px;
+    margin: 0.625rem 0.625rem;
+    padding: 0.625rem;
     font-family: 'Oxanium', sans-serif;
 }
 
 legend {
     font-size: 1.2rem;
-    text-shadow: 1px 1px 1px rgb(45, 45, 45);
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem rgb(45, 45, 45);
 }
 
 fieldset.bigform {
     max-width: 90%;
     background-color: rgba(255, 255, 255, 0.3);
-    border: 1px solid rgb(195, 76, 52);
+    border: 0.0625rem solid rgb(195, 76, 52);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content:space-around;
 }
 
 fieldset.bigform>div {
-    margin: 5px 3px;
-    border-radius: 10px;
+    margin: 0.3125rem 0.1875rem;
+    border-radius: 0.625rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-fieldset.bigform div>label {
+fieldset.bigform label {
     display: block;
     color: rgb(195, 76, 52);
-    margin: 5px 20px;
+    margin: 0.3125rem 1.25rem;
+    justify-content:space-around;
+    text-align: center;
 }
 
 fieldset.smallform {
     max-width: 40%;
     background-color: rgba(255, 255, 255, 0.3);
-    border: 1px solid rgb(195, 76, 52);
+    border: 0.0625rem solid rgb(195, 76, 52);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -485,8 +494,12 @@ fieldset.smallform {
     align-items: flex-start;
 }
 
-fieldset.smallform div, fieldset.smallform label, .uniforms {
+fieldset.smallform div, fieldset.smallform label {
     color: rgb(195, 76, 52);
+}
+
+.bigform input:hover, .smallform input:hover{
+    background: rgba(209, 188, 118, 0.4);
 }
 
 button {
@@ -495,20 +508,20 @@ button {
     transition: all 0.5s;
     cursor: pointer;
     text-align: center;
-    font-size: 1.3rem;
-    padding: 5px 20px;
-    margin: 10px;
-    width: 200px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-size: 1.1rem;
+    padding: 0.3125rem 1.25rem;
+    margin: 0.625rem;
+    width: 12rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0.125rem 0.25rem, rgba(0, 0, 0, 0.3) 0px 0.4375rem 0.8125rem -0.1875rem, rgba(0, 0, 0, 0.2) 0px -0.1875rem 0px inset;
 }
 
 button[type=reset] {
     font-family: "Scoreboard";
     background-color: rgb(45, 45, 45);
-    width: 150px;
+    width: 9.375rem;
     position: relative;
     overflow: hidden;
-    border: 2px solid rgb(195, 76, 52);    
+    border: 0.125rem solid rgb(195, 76, 52);    
 }
 
 button[type=reset]:after {
@@ -519,7 +532,7 @@ button[type=reset]:after {
     position: absolute;
     padding-top: 300%;
     padding-left: 350%;
-    margin-left: -20px !important;
+    margin-left: -1.25rem !important;
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s
@@ -536,7 +549,7 @@ button[type=reset]:active:after {
 button[type=submit] {
     font-family: "Scoreboard";
     background-color: rgb(45, 45, 45);
-    border: 2px solid rgb(91, 163, 155);
+    border: 0.125rem solid rgb(91, 163, 155);
 }
 
 button span {
@@ -554,13 +567,13 @@ button span:after {
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -20px;
+    right: -1.25rem;
     transition: 0.5s;
 }
 
 button:hover span {
     font-family: "Scoreboard";
-    padding-right: 25px;
+    padding-right: 1.5625rem;
     color: rgb(255, 217, 0);
 }
 
@@ -627,7 +640,66 @@ button.email{
         transition: all 0.5s;
         cursor: pointer;
         font-size: 1rem;
-        padding: 5px 20px;
-        margin: 10px;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        padding: 0.3125rem 1.25rem;
+        margin: 0.625rem;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 0.125rem 0.25rem, rgba(0, 0, 0, 0.3) 0px 0.4375rem 0.8125rem -0.1875rem, rgba(0, 0, 0, 0.2) 0px -0.1875rem 0px inset;
+}
+
+@media only screen and (max-width: 1180px) 
+{
+    * { 
+        font-size: 0.85rem; 
     }
+
+    h1{
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: 100; 
+    }
+
+    header img{
+        margin-top: 0;
+        filter: drop-shadow(0 0.125rem 0.312rem rgb(0, 0, 0));
+        height: 75%;
+    } 
+    
+    .text{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        min-height: 60vh;
+    }   
+    
+    th{
+        margin: auto;
+        font-size: small;
+    }
+
+    tr, td{
+        font-size: small;
+    }
+
+    thead{
+        font-size: small;
+    }
+
+    tfoot{
+        font-size: small;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.3125rem 1.25rem;
+        margin: 0.625rem;
+        width: 12rem;
+    }    
+
+    .botonera a{
+        padding: 0;
+    }
+    
+    .botonera a[href="#"] {
+        padding: 0;
+    }
+}
